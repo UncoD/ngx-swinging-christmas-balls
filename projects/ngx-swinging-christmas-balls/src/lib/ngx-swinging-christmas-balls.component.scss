@@ -1,0 +1,79 @@
+.ball-0 {
+    background-image: url("../assets/ball_0.png");
+}
+
+.ball-1 {
+    background-image: url("../assets/ball_1.png");
+}
+
+.ball-2 {
+    background-image: url("../assets/ball_2.png");
+}
+
+.ball-3 {
+    background-image: url("../assets/ball_3.png");
+}
+
+.ball {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+
+.swinging-left {
+    -webkit-animation: swinging-left 5s ease-in-out none;
+    animation: swinging-left 5s ease-in-out none;
+}
+
+.swinging-right {
+    -webkit-animation: swinging-right 5s ease-in-out none;
+    animation: swinging-right 5s ease-in-out none;
+}
+
+@-webkit-keyframes swinging-right {
+    10%{-webkit-transform: rotate(-40deg)}
+    25%{-webkit-transform: rotate(35deg)}
+    40%{-webkit-transform: rotate(-20deg)}
+    55%{-webkit-transform: rotate(10deg)}
+    70%{-webkit-transform: rotate(-5deg)}
+    80%{-webkit-transform: rotate(2deg)}
+    90%{-webkit-transform: rotate(-1deg)}
+    100%{-webkit-transform: rotate(0deg)}
+}
+ 
+@keyframes swinging-right {
+    10%{transform: rotate(-40deg)}
+    25%{transform: rotate(35deg)}
+    40%{transform: rotate(-20deg)}
+    55%{transform: rotate(10deg)}
+    70%{transform: rotate(-5deg)}
+    80%{transform: rotate(2deg)}
+    90%{transform: rotate(-1deg)}
+    100%{transform: rotate(0deg)}
+}
+
+@-webkit-keyframes swinging-left {
+    10%{-webkit-transform: rotate(40deg)}
+    25%{-webkit-transform: rotate(-35deg)}
+    40%{-webkit-transform: rotate(20deg)}
+    55%{-webkit-transform: rotate(-10deg)}
+    70%{-webkit-transform: rotate(5deg)}
+    80%{-webkit-transform: rotate(-2deg)}
+    90%{-webkit-transform: rotate(1deg)}
+    100%{-webkit-transform: rotate(0deg)}
+}
+ 
+@keyframes swinging-left {
+    10%{transform: rotate(40deg)}
+    25%{transform: rotate(-35deg)}
+    40%{transform: rotate(20deg)}
+    55%{transform: rotate(-10deg)}
+    70%{transform: rotate(5deg)}
+    80%{transform: rotate(-2deg)}
+    90%{transform: rotate(1deg)}
+    100%{transform: rotate(0deg)}
+}

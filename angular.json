@@ -99,6 +99,39 @@
           }
         }
       }
+    },
+    "ngx-swinging-christmas-balls": {
+      "projectType": "library",
+      "root": "projects/ngx-swinging-christmas-balls",
+      "sourceRoot": "projects/ngx-swinging-christmas-balls/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-swinging-christmas-balls/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-swinging-christmas-balls/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-swinging-christmas-balls/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ngx-swinging-christmas-balls/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }
