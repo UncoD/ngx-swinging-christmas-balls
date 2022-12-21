@@ -1,27 +1,43 @@
-# AngularModules
+# NgxSwingingChristmasBalls
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+Swing christmas balls on mouse hover on Angular
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run
+``` shell
+npm install ngx-swinging-christmas-balls
+```
 
-## Code scaffolding
+In `app.module.ts`
+``` ts
+import { NgModule } from '@angular/core';
+import { NgxSwingingChristmasBallsModule } from 'ngx-swinging-christmas-balls';
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    NgxSwingingChristmasBallsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
 
-## Build
+## Use
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+``` html
+<swinging-christmas-balls [count]="6" [scale]="-1"></swinging-christmas-balls>
+```
 
-## Running unit tests
+### Params
+|param|description|default|
+|---|---|---|
+|count| Balls count |`1`|
+|scale| Ball size scale (`float`). If the value is less then `0`, then each ball will have a random scale from `0.8` to `1.2` | `1` |
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Example
+You can find an example project in `./src`

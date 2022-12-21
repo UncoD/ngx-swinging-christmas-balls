@@ -1,11 +1,30 @@
 {
   "name": "ngx-swinging-christmas-balls",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^15.0.0",
-    "@angular/core": "^15.0.0"
-  },
+  "version": "1.0.0",
+  "author": "Julia Gafina (UncoD)",
+  "description": "Swing christmas balls on mouse hover (Angular)",
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UncoD/ngx-swinging-christmas-balls.git"
+  },
+  "bugs": {
+    "url": "https://github.com/UncoD/ngx-swinging-christmas-balls/issues"
+  },
+  "homepage": "https://github.com/UncoD/ngx-swinging-christmas-balls",
+  "keywords": [
+    "christmas",
+    "balls",
+    "swing",
+    "swinging",
+    "wiggling",
+    "angular"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^12.0.0",
+    "@angular/core": "^12.0.0"
   }
 }

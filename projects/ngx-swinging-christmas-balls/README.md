@@ -1,24 +1,40 @@
 # NgxSwingingChristmasBalls
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+Swing christmas balls on mouse hover on Angular
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name --project ngx-swinging-christmas-balls` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-swinging-christmas-balls`.
-> Note: Don't forget to add `--project ngx-swinging-christmas-balls` or else it will be added to the default project in your `angular.json` file. 
+Run
+``` shell
+npm install ngx-swinging-christmas-balls
+```
 
-## Build
+In `app.module.ts`
+``` ts
+import { NgModule } from '@angular/core';
+import { NgxSwingingChristmasBallsModule } from 'ngx-swinging-christmas-balls';
 
-Run `ng build ngx-swinging-christmas-balls` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    NgxSwingingChristmasBallsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
 
-## Publishing
+## Use
 
-After building your library with `ng build ngx-swinging-christmas-balls`, go to the dist folder `cd dist/ngx-swinging-christmas-balls` and run `npm publish`.
+``` html
+<swinging-christmas-balls [count]="6" [scale]="-1"></swinging-christmas-balls>
+```
 
-## Running unit tests
-
-Run `ng test ngx-swinging-christmas-balls` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Params
+|param|description|default|
+|---|---|---|
+|count| Balls count |`1`|
+|scale| Ball size scale (`float`). If the value is less then `0`, then each ball will have a random scale from `0.8` to `1.2` | `1` |
