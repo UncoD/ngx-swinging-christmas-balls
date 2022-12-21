@@ -1,8 +1,9 @@
-<div
-  *ngFor="let ball of balls; index as i"
-  [class]="'ball ball-' + (i % 4)"
-  [style]="ball"
-  (mouseenter)="add_swinging_class($event)"
-  (animationend)="remove_swinging_class($event)"
-  (onanimate)="test($event)"
-></div>
+<div class="balls">
+  <div
+    *ngFor="let ball of balls; index as i"
+    [class]="'ball ball-' + (i % 4)"
+    [style]="ball"
+    (mouseenter)="add_swinging_class($event)"
+    (animationend)="remove_swinging_class($event)"
+  ></div>
+</div>

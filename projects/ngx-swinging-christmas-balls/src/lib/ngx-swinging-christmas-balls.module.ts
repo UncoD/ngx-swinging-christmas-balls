@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { NgxSwingingChristmasBallsComponent } from './ngx-swinging-christmas-balls.component';
-import { BrowserModule } from '@angular/platform-browser'
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -8,7 +8,7 @@ import { BrowserModule } from '@angular/platform-browser'
     NgxSwingingChristmasBallsComponent
   ],
   imports: [
-    BrowserModule
+    CommonModule
   ],
   exports: [
     NgxSwingingChristmasBallsComponent

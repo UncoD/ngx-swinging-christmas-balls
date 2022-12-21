@@ -8,7 +8,6 @@ import { Component, Input, OnInit } from '@angular/core';
 export class NgxSwingingChristmasBallsComponent implements OnInit {
   @Input() count: number = 1;
   @Input() scale: number = 1;
-
   readonly defaultSize = {
     x: 53,
     y: 90
@@ -55,9 +54,5 @@ export class NgxSwingingChristmasBallsComponent implements OnInit {
       y: this.defaultSize.y * scale
     };
     return `width: ${size.x}px; height: ${size.y}px;`;
-  }
-  
-  test(e: any) {
-    console.log(e)
   }
 }
