@@ -2,6 +2,8 @@
 
 Swing christmas balls on mouse hover on Angular
 
+![example](./assets/example.gif)
+
 ## Installation
 
 Run
