@@ -2,6 +2,8 @@
 
 Swing christmas balls on mouse hover on Angular
 
+![example](./projects/ngx-swinging-christmas-balls/assets/example.gif)
+
 ## Installation
 
 Run
