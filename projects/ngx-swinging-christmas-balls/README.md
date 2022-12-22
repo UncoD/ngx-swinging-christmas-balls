@@ -2,7 +2,7 @@
 
 Swing christmas balls on mouse hover on Angular
 
-![example](./assets/example.gif)
+[![example.gif](https://i.postimg.cc/TYmzYKjp/example.gif)](https://postimg.cc/Tpd7tY46)
 
 ## Installation
 
