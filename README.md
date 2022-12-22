@@ -2,7 +2,7 @@
 
 Swing christmas balls on mouse hover on Angular
 
-![example.gif](https://i.postimg.cc/TYmzYKjp/example.gif)
+![example.gif](https://github.com/UncoD/ngx-swinging-christmas-balls/src/assets/example.gif?raw=true)
 
 ## Installation
 
